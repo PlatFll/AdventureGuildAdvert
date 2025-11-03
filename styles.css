@@ -63,11 +63,15 @@ nav ul {
     justify-content: space-around;
     align-items: center;
     gap: 100px;
-    border: 2px solid black;
+    border: 3px solid rgb(73, 50, 30);
     border-radius: 50px;
     padding: 25px;
     background-color: white;
     color: black;
+
+    background-image: url(Images/Parchment1.png);
+    background-position: center;
+    background-size: cover;
 }
 
 nav ul li a {
@@ -90,4 +94,32 @@ nav ul li a {
 .MainContainer{
     max-width: 1500px;
     margin: 0 auto;
+}
+
+.TheRequestContainer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.TheLetter{
+    background-image: url(Images/Letter.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 550px;
+    min-height: 650px;
+}
+
+.scroll-text-box{
+    position: absolute;
+    top: 140px;
+    left: 150px;
+    right: 150px;
+    bottom: 100px;
+    overflow: hidden;
+    text-align: left;
+    font-family: 'Lucida Handwriting', cursive;
+    font-size: 14px;
+    line-height: 1.3;
 }
