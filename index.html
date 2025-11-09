@@ -31,61 +31,81 @@
     <!--End of Header-->
 
     <main>
-        <div class="MainContainer">
+      <section>
+          <div class="MainContainer">
+              <div class="TheRequestContainer">
+                  <div class="TheLetter">
+                      <div class="scroll-text-box">
+                          <p>Dear Adventurer,
+                              <br>
+                              <br>
+                              <br>
+                              The kingdom is in great peril.. 
+                              <br>
+                              <br>
+                              Dark forces gather beyond our borders, threatening the peace we hold dear.
+                              <br>
+                              <br>
+                              We need brave souls like you to join the Adventurer's Guild and help defend our lands.
+                              <br>
+                              <br>
+                              Will you answer the call to stand against evil?
+                              <br>
+                              <br>
+                              <br>
+                              Sincerely,
+                              <br>
+                              <span style="margin-left: 15px;">Grandmaster Elric</span> </p>
+                      </div>
+                  </div>
+
+                  <div class="TheForm">
+                      <form class="TheForm-Inside">
+                          <h3>Join the Adventurer's Guild Today!</h3>
+                          <label for="name">Name:</label>
+                          <input type="text" id="name" name="name" required>
+
+                          <label for="skill-level">Skill Level:</label>
+                          <select id="skill-level" name="skill-level" required>
+                              <option value="beginner">Beginner</option>
+                              <option value="intermediate">Intermediate</option>
+                              <option value="advanced">Advanced</option>
+                          </select>
+
+                          <label for="class">Class:</label>
+                          <select id="class" name="class" required>
+                              <option value="mage">Mage</option>
+                              <option value="warrior">Warrior</option>
+                              <option value="rogue">Rogue</option>
+                              <option value="healer">Healer</option>
+                              <option value="archer">Archer</option>
+                          </select>
+
+                          <label for="Race">Race:</label>
+                          <select id="race" name="race" required>
+                            <option value="human">Human</option>
+                            <option value="elf">Elf</option>
+                            <option value="dwarf">Dwarf</option>
+                            <option value="orc">Orc</option>
+                            <option value="gnome">Gnome</option>
+                            <option value="halfbeast">Half-Beast</option>
+                          </select>
+
+                          <label for="Affiliation">Affiliation:</label>
+                          <select id="affiliation" name="affiliation" required>
+                            <option value="kingdom_citizen">Kingdom Citizen</option>
+                            <option value="seven_tribes">Seven Tribes</option>
+                            <option value="great_forest">Great Forest</option>>
+                            <option value="iron_mountain">Iron Mountain</option>
+                            <option value="nomad">Nomad</option>
+                          </select>
+                      </form>
+                  </div>
+              </div>
+          </section>
+
             <section>
-            <div class="TheRequestContainer">
-                <div class="TheLetter">
-                    <div class="scroll-text-box">
-                        <p>Dear Adventurer,
-                            <br>
-                            <br>
-                            <br>
-                            The kingdom is in great peril.. 
-                            <br>
-                            <br>
-                            Dark forces gather beyond our borders, threatening the peace we hold dear.
-                            <br>
-                            <br>
-                            We need brave souls like you to join the Adventurer's Guild and help defend our lands.
-                            <br>
-                            <br>
-                            Will you answer the call to stand against evil?
-                            <br>
-                            <br>
-                            <br>
-                            Sincerely,
-                            <br>
-                            <span style="margin-left: 15px;">Grandmaster Elric</span> </p>
-                    </div>
-                </div>
-
-                <div class="TheForm">
-                    <form class="TheForm-Inside">
-                        <h3>Join the Adventurer's Guild Today!</h3>
-                        <label for="name">Name:</label>
-                        <input type="text" id="name" name="name" required>
-
-                        <label for="skill-level">Skill Level:</label>
-                        <select id="skill-level" name="skill-level" required>
-                            <option value="beginner">Beginner</option>
-                            <option value="intermediate">Intermediate</option>
-                            <option value="advanced">Advanced</option>
-                        </select>
-
-                        <label for="class">Class of Adventurer:</label>
-                        <select id="class" name="class" required>
-                            <option value="mage">Mage</option>
-                            <option value="warrior">Warrior</option>
-                            <option value="rogue">Rogue</option>
-                            <option value="healer">Healer</option>
-                            <option value="archer">Archer</option>
-                        </select>
-                    </form>
-                </div>
-            </div>
-            </section>
-
-            <section class="GuildIntro">
+              <div class="GuildIntro">
                 <!--What we do and a concise description about us and our goals-->
                 <h3>
                     About the Guild:
@@ -103,158 +123,18 @@
                 <p>
                     Certified by the kingdom's royal council.
                 </p>
+              </div>
             </section>
 
             <section>
+              <div class="CardsContainer">
                 <!--The images of what we provide with short descriptions-->
-                <ul>
-                    <li>Access to the guild hall with provided housing for newcomers.</li>
-                    <li>Train and hone your skills in our fighting classes provided by top-notch heroes!</li>
-                    <li>Complete quests curated for your skill level and reap the rewards.</li>
+                <ul class="CardsList">
+                    <li class="CardsItem">Access to the guild hall with provided housing for newcomers.</li>
+                    <li class="CardsItem">Train and hone your skills in our fighting classes provided by top-notch heroes!</li>
+                    <li class="CardsItem">Complete quests curated for your skill level and reap the rewards.</li>
                 </ul>
-            </section>
-
-            <section>
-                <!--A small signing up form-->
-                <p>
-                    Well? What are you waiting for!? Go ahead and sign up now:
-                </p>
-                    <!--Form should include:
-                        Name
-                        Skill level
-                        Class of adventurer (Mage / Warrior / Rogue / Healer / Archer)
-                        Gender
-                        Race
-                    -->
-                    
-            </section>
-
-            <section>
-                FILLER SECTION
-            </section>
-
-              <section>
-                FILLER SECTION
-            </section>
-
-              <section>
-                FILLER SECTION
-            </section>
-
-              <section>
-                FILLER SECTION
-            </section>
-
-              <section>
-                FILLER SECTION
-            </section>
-
-              <section>
-                FILLER SECTION
-            </section>
-
-              <section>
-                FILLER SECTION
-            </section>
-
-              <section>
-                FILLER SECTION
-            </section>
-
-              <section>
-                FILLER SECTION
-            </section>
-
-              <section>
-                FILLER SECTION
-            </section>
-
-              <section>
-                FILLER SECTION
-            </section>
-
-              <section>
-                FILLER SECTION
-            </section>
-
-              <section>
-                FILLER SECTION
-            </section>
-
-              <section>
-                FILLER SECTION
-            </section>
-
-              <section>
-                FILLER SECTION
-            </section>
-
-              <section>
-                FILLER SECTION
-            </section>
-
-              <section>
-                FILLER SECTION
-            </section>
-
-              <section>
-                FILLER SECTION
-            </section>
-
-              <section>
-                FILLER SECTION
-            </section>
-
-              <section>
-                FILLER SECTION
-            </section>
-
-              <section>
-                FILLER SECTION
-            </section>
-
-              <section>
-                FILLER SECTION
-            </section>
-
-              <section>
-                FILLER SECTION
-            </section>
-
-              <section>
-                FILLER SECTION
-            </section>
-
-              <section>
-                FILLER SECTION
-            </section>
-
-              <section>
-                FILLER SECTION
-            </section>
-
-              <section>
-                FILLER SECTION
-            </section>
-
-              <section>
-                FILLER SECTION
-            </section>
-
-              <section>
-                FILLER SECTION
-            </section>
-
-              <section>
-                FILLER SECTION
-            </section>
-
-              <section>
-                FILLER SECTION
-            </section>
-
-              <section>
-                FILLER SECTION
+              </div>
             </section>
         </div>
     </main>
