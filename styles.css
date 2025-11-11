@@ -28,13 +28,23 @@ main {
 }
 
 footer {
-    background-color: rgb(229, 96, 255);
     color: white;
     text-align: center;
     padding: 10px;
     position: fixed;
     width: 100%;
     bottom: 0;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    background-image: url(Images/Wood1.png);
+}
+footer a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding-top: 5px;
 }
 
 ul {
@@ -162,6 +172,7 @@ nav ul li a {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 
     background-image:url(Images/Wood1.png);
     background-size: contain;
@@ -188,5 +199,14 @@ nav ul li a {
     border-radius: 15px;
 
     padding: 15px;
-    height: 200px;
+    justify-content: center;
+    align-items: center;
+
+    height: auto;
+    width: 100%;
+}
+
+.CardImage {
+    height: 80%;
+    width: 95%;
 }
