@@ -194,4 +194,49 @@ html , body {
     border-bottom: 2px solid gray;
 }
 
+.trendingGrid {
+    display: grid;
+
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+
+    background-color: rgb(255, 255, 255);
+    padding: 1.5vh;
+    margin: 2vh;
+
+    border: 1px solid transparent;
+    border-radius: 7px;
+
+    gap: 2vh;
+}
+
+.trendingCell {
+    display: flex;
+
+    justify-content: flex-start;
+    align-items: center;
+
+    gap: 2vh;
+}
+
+.trendingCell div {
+    display: flex;
+    flex-direction: column;
+}
+
+.trendingCell div p {
+    color: rgba(0, 0, 0, 0.658);
+    font-size: small;
+}
+
+.trendingCell img {
+    width: 30%;
+    height: auto;
+}
+
+.trendingCell h5,
+.trendingCell p {
+    margin: 0;
+}
+
 /*------------------------------------------------------------------------ RIGHTBAR ---------------------------------------------------------------------------*/
