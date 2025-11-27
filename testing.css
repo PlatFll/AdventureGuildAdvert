@@ -14,8 +14,6 @@ html , body {
     grid-template-rows: 1fr 1fr 5fr 1fr;
     grid-template-columns: 1fr 3fr 1fr;
 
-    height: 100vh;
-
 }
 
 /*------------------------------------------------------------------------ SIDEBAR ---------------------------------------------------------------------------*/
@@ -26,7 +24,6 @@ html , body {
     gap: 25px;
     
     background-color: rgb(63, 163, 230);
-    border: solid 2px rgb(43, 9, 9);
     color: aliceblue;
 
     grid-row: 1 / 5;
@@ -35,59 +32,166 @@ html , body {
 .sideBarIcons {
     display: flex;
     justify-content: center;
-    gap: 1vh;
+    gap: 4vh;
 }
 
 .sideBar div img {
-    width: 15%;
+    width: 10%;
     height: auto;
+    filter: brightness(0) invert(1);
 }
 
+/*------------------------------------------------------------------------ SIDEBAR ---------------------------------------------------------------------------*/
 
-
-
-
-
+/*------------------------------------------------------------------------ NAVBAR ---------------------------------------------------------------------------*/
 
 .navBar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1; 
+    grid-template-rows: 2fr 2fr;
+
     
     background-color: rgb(255, 255, 255);
-    border: solid 2px rgb(43, 9, 9);
-
-    font-size: x-large;
 
     grid-row: 1 / 3;
     grid-column: 2 / 4 ;
 }
 
-.articleBar {
-    display: flex;
+.topPart {
+    display: grid;
+
+    grid-template-columns: 1fr 8fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+
     justify-content: center;
     align-items: center;
     
-    background-color: rgb(221, 228, 240);
-    border: solid 2px rgb(43, 9, 9);
+    padding-left: 5vh;
+    padding-right: 5vh;
+}
 
-    font-size: x-large;
+.topPart input {
+    border: 2px solid transparent;
+    border-radius: 509px;
+    background-color: rgb(221, 228, 240);
+    width: 70%;
+    height: 30%;
+}
+
+.navBar div img {
+    width: 20%;
+}
+
+.bottomPart {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+
+    grid-template-rows: 1;
+    grid-template-columns: 1fr 2fr 1fr;
+
+    padding-left: 5vh;
+    padding-right: 5vh;
+}
+
+.bottomPart div button {
+    border: 2px solid transparent;
+    border-radius: 50px;
+    background-color: rgb(27, 147, 216);
+    color: aliceblue;
+
+    padding: 1vh 3vh;
+}
+
+/*------------------------------------------------------------------------ NAVBAR ---------------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------------ ARTICLEBAR ---------------------------------------------------------------------------*/
+
+.articleBar {
+    display: flex;
+    flex-direction: column;
+    
+    padding: 20px;
+    
+    background-color: rgb(221, 228, 240);
+
 
     grid-row: 3 / 5;
     grid-column: 2 / 2;
 }
 
+.articleGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+
+    gap: 2vh;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid transparent;
+    border-left: 10px solid rgb(255, 196, 4);
+
+    padding: 15px;
+
+    background-color: white;
+}
+
+.card p {
+    color: rgba(0, 0, 0, 0.514);
+}
+
+.cardIcons {
+    display: flex;
+    justify-content: end;
+    gap: 3vh;
+}
+
+.cardIcons img {
+    width: 5%;
+}
+
+/*------------------------------------------------------------------------ ARTICLEBAR ---------------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------------ RIGHTBAR ---------------------------------------------------------------------------*/
 
 .rightBar {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
 
     background-color:rgb(221, 228, 240);
-    border: solid 2px rgb(43, 9, 9);
 
     font-size: x-large;
 
     grid-column: 3 / 4;
     grid-row: 3 / 5;
 }
+
+.announcementsBar {
+    display: flex;
+    flex-direction: column;
+}
+
+.announcementsGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+
+    margin: 2vh;
+    padding: 2vh;
+
+    border: 1px solid transparent;
+    border-radius: 7px;
+
+    font-size: small;
+
+    background-color: white;
+}
+
+.announcementsGrid div {
+    border-bottom: 2px solid gray;
+}
+
+/*------------------------------------------------------------------------ RIGHTBAR ---------------------------------------------------------------------------*/
